@@ -4,7 +4,6 @@
 
 /* Task 1: First, we want to adjust how the size of our elements is calculated in CSS. Do you know how to switch from "content-box" to "border-box"? */
 
-/* Your solution */
 * {
   box-sizing: border-box;
 }
@@ -21,9 +20,8 @@ body {
 
 /* ------- Headings Part 1 ------- */
 
-/* Task 3: Setting the line height to 1.5 is good for texts, for accessibility reasons, but it seems too much for headings. Let's change this by giving our headings a line height of 1.2. */
+/* Task 3: To set the line height to 1.5 is good for texts, because of accessibility concerns, but for the headings it seems too much. Let's change this by giving our headings a line height of 1.2: */
 
-/* Your solution */
 h1,
 h2 {
   line-height: 1.2;
@@ -38,9 +36,8 @@ h2 {
 */
 
 .title {
-  /* Your solution */
   background-color: white;
-  margin: 0;
+  margin-top: 0;
   padding: 10px;
   text-align: center;
 }
@@ -56,14 +53,13 @@ h2 {
 */
 
 section {
-  /* Your solution */
-  background-color: white;
+  background: white;
   padding: 20px;
   margin: 10px;
   border-left: 5px solid orange;
 }
 
-.secondsection {
+section.favourites {
   border-left: 5px solid gold;
 }
 
@@ -78,16 +74,14 @@ section {
 */
 
 .subtitle {
-  /* Your solution */
+  display: inline-block;
+  padding: 0 0.5rem 0;
   border-left: 3px solid gold;
   border-right: 3px solid gold;
-  padding: 5px;
-  display: inline-block;
 }
 
-.subtitlesecond{
-  border-left: 3px solid orange;
-  border-right: 3px solid orange;
+.favourites .subtitle {
+  border-color: orange;
 }
 
 /* ------- List ------- */
@@ -95,14 +89,13 @@ section {
 /* Task 7: Finally, let's style our list with of favorite Pokémon. Which selector do we need? Also, add values for padding. */
 
 /* Add selector */
- ul {
+ul {
   list-style: "🧡";
-  padding-left: 20px ;
+  padding-left: 1.5rem;
 }
 
-/* Add selector */
- li{
-  padding-left: 20px ;
+ul li {
+  padding-left: 0.55rem;
 }
 
 /* ------- The End -------- */
