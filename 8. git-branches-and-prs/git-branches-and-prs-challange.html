@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenges: Git Branches and PRs</title>
+     
+    <!-- Theme CSS laden -->
+    <link
+      rel="stylesheet"
+      href="/web-curriculum/assets/css/style.css?v=67261d04a37b9cc2aeb2482d3d2e133abfa7faa5"
+    />
+    <style>
+      main {
+        padding: 1em;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      li {
+        margin-left: 1.2em;
+      }
+      pre {
+        margin-bottom: 1.5em;
+      }
+      code,
+      pre {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        overflow-wrap: anywhere;
+        display: block;
+        position: relative;
+        padding: 1em 4em 1em 1em;
+      }
+      code[class*="language-plaintext"] {
+        display: inline-block;
+        padding: 3px;
+        background-color: #eeeeee;
+        border-radius: 6px;
+      }
+      button {
+        cursor: pointer;
+        font-size: 0.8em;
+        border-radius: 6px;
+        border: 1px solid black;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+      }
+      h2 {
+        margin-top: 0.8em;
+        margin-bottom: 0.8em;
+      }
+      img {
+        width: 100%;
+      }
+      td {
+        border: 1px solid #ddddde;
+        padding: 2px;
+      }
+      table {
+        margin-bottom: 1em;
+      }
+      .download {
+        display: inline-block;
+        padding: 0.5em 1em;
+        background-color: #4f46e5;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.2s;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- Hauptinhalt -->
+      <h1 id="challenges-git-branches-and-prs">Challenges: Git Branches and PRs</h1>
+
+<h2 id="session-notebook-part-2">Session Notebook Part 2</h2>
+
+<p>(difficulty: 🔥)</p>
+
+<p>Continue working on your session notebook.</p>
+
+<ol>
+  <li>First, create a new branch called <code class="language-plaintext highlighter-rouge">notes/github-and-markdown</code>.</li>
+  <li>Switch to that branch and start working on the respective session note. Fill the session note with short hints and a collection of commands you find helpful.</li>
+  <li>Commit regularly after each step, and use <strong>good commit messages</strong>.</li>
+  <li>When you are satisfied with the session note, push the content of the branch to the remote repository (<code class="language-plaintext highlighter-rouge">git push -u origin notes/github-and-markdown</code>).</li>
+  <li>On GitHub, go to the remote repository. A yellow action box should appear, suggesting you create a pull request for the named branch. Go ahead and create the pull request.</li>
+  <li>Share the link to the pull request with your group so they can review your notes.</li>
+  <li>Merge the pull request or incorporate suggestions from your group mates.</li>
+  <li>Repeat this workflow with the other session notes you created over the last few days.</li>
+</ol>
+
+<blockquote>
+  <p>💡 This workflow is fundamental to web developers across the industry. We will continue to work this way, especially in the capstone project. So try to get comfortable with each step - it
+will quickly become second nature.</p>
+</blockquote>
+
+    </main>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll("a[href^='http']").forEach(function (link) {
+          // Nur externe Links, nicht gleiche Domain
+          if (!link.href.includes(window.location.hostname)) {
+            link.setAttribute("target", "_blank");
+            link.setAttribute("rel", "noopener noreferrer");
+          }
+        });
+
+        document
+          .querySelectorAll("div[class*='language-bash']")
+          .forEach((div) => {
+            const code = div.querySelector("code");
+            const btn = document.createElement("button");
+            btn.textContent = "copy";
+            btn.addEventListener("click", (event) => {
+              navigator.clipboard.writeText(code.firstChild.data);
+              event.target.textContent = "copied!";
+              setTimeout(() => {
+                event.target.textContent = "copy";
+              }, 2000);
+            });
+            code.append(btn);
+          });
+      });
+    </script>
+  </body>
+</html>
+
