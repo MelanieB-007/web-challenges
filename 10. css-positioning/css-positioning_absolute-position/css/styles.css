@@ -43,9 +43,9 @@ main {
 }
 
 .box--top-right {
-position: absolute;
-top:0;
-right:0;
+  position: absolute;
+  top:0;
+  right:0;
   background-color: #5dade2;
 }
 
